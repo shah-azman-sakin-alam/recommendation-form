@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id='title'>freeCodeCamp Survey Form</h1>
+  <p id='description'>Thank you for taking the time to help us improve the platform</p>
+  <form id='survey-form' method='post'>
+    <fieldset>
+      <legend>Enter Your Personal Details</legend>
+
+      <label for='name'  class='block' id='name-label' >
+        Name:
+        <br>
+        <input  id='name' type='text' name='name' required placeholder='Your Name' class='details'> 
+      </label>
+
+      <label for='email'  class='block 'id="email-label" >Email
+        <input id='email' type='email' required pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$' placeholder='email' class='details'>
+      </label>
+
+      <label for='number' id="number-label" >Age
+        <input id='number' type='number' required min='18' max='36' placeholder='Your Age?' class='details'> 
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for='dropdown'>
+        favourite part of freeCodeCamp?
+        <select id='dropdown'>
+          <option value='Challenges'>Challenges</option>
+          <option value='Projects'>Projects</option>
+        </select>
+      <label>
+    </fieldset>
+
+    <fieldset class='fieldsetRecommend'>
+      <legend>Do you recommend us?</legend>
+      
+        <div>
+        <input class='inline' type='radio' name='Recommend'
+id='recommend' value='yes'>
+
+        <label class='blockLabel' for='recommend'>
+          
+          recommend
+      </label>
+
+    </div>
+    <div>
+        <input
+        id='no' type='radio' class='inline' name='Recommend' value='no'>
+        
+         <label for='no' class='blockLabel'>
+           no
+           
+      </label>
+    </div>
+    </fieldset>
+
+    <fieldset class='fieldsetNext' >
+      <legend>What would you like to do next?</legend>
+      <div>
+
+        <label for='coder' class='next'>Become Coder</label>
+
+        <input type='checkbox'  value='coder' id='coder' >
+          
+      </div>
+      
+      <div>
+            <label for='hacker' class='next' >Become Hacker</label>
+        <input type='checkbox'  value='hacker' id='hacker' >
+        
+      </div>
+
+  
+      <div>
+        <label for='programmer' class='next'>Become Programmer</label>
+
+<input type='checkbox' value='programmer' id='programmer' class='programmer'>
+
+       </div>
+      
+    </fieldset>
+
+    <textarea placeholder='Additional comments?' rows='3' cols='30' class='block'></textarea>
+
+    <input type='submit' id='submit'></input>
+  </form>
+</body>
+</html>

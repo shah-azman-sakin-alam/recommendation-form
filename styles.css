@@ -1,0 +1,129 @@
+body{
+    background-color: rgba(0,130,255);
+    margin: 2em 36px;
+    font-size: 16px;
+    font-family: Tahoma;
+  }
+  h1,p{
+    text-align: center;
+  }
+  fieldset{
+    
+    margin-bottom: 2em;
+    border: none;
+    
+    
+  }
+  fieldset>legend{
+    margin:0 auto;
+  }
+  .next{
+    display: inline;
+    white-space: nowrap;
+    
+  }
+  .details{
+    margin: 0.6em 0;
+    background-color: #120104;
+    border:none;
+    border-radius: 40px
+  }
+  select{
+    display: block;
+    margin-top: 1em
+  }
+  input[type='submit']{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right:auto;
+    
+   display: block;
+    min-height: 30px;
+     max-height: 50px;
+    min-width:50%;
+  }
+  form{
+    padding: 1em 1em;
+    min-height:750px;
+    max-height: 950px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 127, 0)
+  }
+  label>input{
+    display: block;
+    min-height: 20px;
+    min-width:50%;
+   
+    
+    margin-bottom: 0.5em;
+  }
+  
+  label{
+    display:inline;
+  }
+  .inline{
+    display:inline;
+    min-height: 0;
+    min-width: 0
+    
+  }
+  input[type='radio']{
+    width: 30px;
+    height: 25px;
+    
+  }
+  .block{
+    display:block;
+    
+  }
+  .blockLabel{
+   display:inline;
+    width:10px;
+    
+  }
+  
+  input[type='checkbox']{
+    min-height: 20px;
+    max-height: 90px;
+    
+    
+    margin-bottom: 0.6em;
+    width:40px;
+  }
+  textarea{
+   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .fieldsetNext>legend{
+    margin: 0.5em 0;
+    width: 70%;
+  
+  }
+  .fieldsetNext>div{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    width: 70%;
+    
+    
+  }
+  @media only screen and (width:600px){
+    .fieldsetRecommend{
+      display:block;
+      
+      width:70%;
+    }
+  }
+  
+  
+  .fieldsetRecommend>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3em;
+  }
